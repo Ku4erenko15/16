@@ -9,7 +9,6 @@ namespace _16
 {
     internal class Program
     {
-        // Дополнительный метод для вывода ArrayList с использованием foreach
         static void Print(ArrayList arrayList)
         {
             Console.WriteLine("Содержимое списка:");
@@ -24,19 +23,19 @@ namespace _16
             // 1. Добавить в коллекцию элементы разных типов
             ArrayList List = new ArrayList
         {
-            10,              // положительное целое
-            "Hello",         // строковое
-            true,            // логическое
-            3.14,            // положительное вещественное
-            -5,              // отрицательное целое
-            -2.71            // отрицательное вещественное
+            10,              
+            "Hello",         
+            true,           
+            3.14,            
+            -5,              
+            -2.71            
         };
 
             // 2. Вывести список
             Print(List);
 
             // 3. Определить количество элементов списка
-            Console.WriteLine($"\nКоличество элементов в списке: {List.Count}");
+            Console.WriteLine($"\nКол-во элементов: {List.Count}");
 
             // 4. Вставить второй элемент со значением строковой величины
             List.Insert(1, "Second Element");
